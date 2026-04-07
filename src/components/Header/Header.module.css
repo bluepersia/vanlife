@@ -6,3 +6,9 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.login-icon {
+  width: 1.125rem;
+  height: 1.125rem;
+  display: block;
+}

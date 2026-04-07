@@ -3,7 +3,7 @@ import { determineNavLinkStyle } from "./utils";
 import styles from "./Nav.module.css";
 import clsx from "clsx";
 
-export default function Nav({ links }) {
+export default function Nav({ links, children }) {
   return (
     <nav>
       <ul className={clsx(styles.list, "reset-list")}>
@@ -19,6 +19,7 @@ export default function Nav({ links }) {
             </NavLink>
           </li>
         ))}
+        {children}
       </ul>
     </nav>
   );
