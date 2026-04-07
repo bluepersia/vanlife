@@ -17,33 +17,41 @@ import HostVanDetail from "./pages/Host/VanDetail/VanDetail.jsx";
 import HostVanDetails from "./pages/Host/VanDetail/Details/HostVanDetails.jsx";
 import HostVanPricing from "./pages/Host/VanDetail/Pricing/HostVanPricing.jsx";
 import HostVanPhotos from "./pages/Host/VanDetail/Photos/HostVanPhotos.jsx";
+import LoginProvider from "./contexts/LoginContext/LoginContext.jsx";
+import Login from "./pages/Login/Login.jsx";
+import AuthLayout from "./components/AuthLayout/AuthLayout.jsx";
 
 const queryClient = new QueryClient();
 
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<AppLayout />}>
-            <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="vans" element={<Vans />} />
-            <Route path="vans/:id" element={<VanDetail />} />
-            <Route path="host" element={<HostLayout />}>
-              <Route index element={<Dashboard />} />
-              <Route path="income" element={<Income />} />
-              <Route path="vans" element={<HostVans />} />
-              <Route path="vans/:id" element={<HostVanDetail />}>
-                <Route index element={<HostVanDetails />} />
-                <Route path="pricing" element={<HostVanPricing />} />
-                <Route path="photos" element={<HostVanPhotos />} />
+      <LoginProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<AppLayout />}>
+              <Route index element={<Home />} />
+              <Route path="about" element={<About />} />
+              <Route path="vans" element={<Vans />} />
+              <Route path="vans/:id" element={<VanDetail />} />
+              <Route path="login" element={<Login />} />
+              <Route element={<AuthLayout />}>
+                <Route path="host" element={<HostLayout />}>
+                  <Route index element={<Dashboard />} />
+                  <Route path="income" element={<Income />} />
+                  <Route path="vans" element={<HostVans />} />
+                  <Route path="vans/:id" element={<HostVanDetail />}>
+                    <Route index element={<HostVanDetails />} />
+                    <Route path="pricing" element={<HostVanPricing />} />
+                    <Route path="photos" element={<HostVanPhotos />} />
+                  </Route>
+                  <Route path="reviews" element={<Reviews />} />
+                </Route>
               </Route>
-              <Route path="reviews" element={<Reviews />} />
             </Route>
-          </Route>
-        </Routes>
-      </BrowserRouter>
+          </Routes>
+        </BrowserRouter>
+      </LoginProvider>
     </QueryClientProvider>
   );
 }

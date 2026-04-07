@@ -9,6 +9,7 @@ export default function Btn({
   color = "#ff8c38",
   fitContent = false,
   borderRadius = 0.31,
+  className = "",
 }) {
   if (to)
     return (
@@ -18,6 +19,7 @@ export default function Btn({
           styles.btn,
           "reset-link",
           fitContent && styles["btn--fit-content"],
+          className,
         )}
         style={{ backgroundColor: color, borderRadius: `${borderRadius}rem` }}
       >
@@ -28,7 +30,11 @@ export default function Btn({
     return (
       <button
         onClick={onClick}
-        className={clsx(styles.btn, fitContent && styles["btn--fit-content"])}
+        className={clsx(
+          styles.btn,
+          fitContent && styles["btn--fit-content"],
+          className,
+        )}
         style={{ backgroundColor: color, borderRadius: `${borderRadius}rem` }}
       >
         {children}
