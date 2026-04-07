@@ -1,0 +1,42 @@
+.about {
+  color: #161616;
+}
+
+.img {
+  display: block;
+  width: 100%;
+}
+
+.inner {
+  padding: 3rem 0;
+}
+
+.title {
+  font-size: 2rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+.para-1,
+.para-2 {
+  line-height: 1.35;
+}
+.para-1 {
+  margin-bottom: 1.5rem;
+}
+
+.para-2 {
+  margin-bottom: 2rem;
+}
+
+.cta {
+  padding: 2rem 2.31rem;
+  background-color: #ffcc8d;
+  border-radius: 0.1rem;
+}
+
+.cta-title {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+}

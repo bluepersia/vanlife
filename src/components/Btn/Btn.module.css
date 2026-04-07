@@ -4,12 +4,18 @@
   width: 100%;
   display: block;
   text-align: center;
-  padding: 0.68rem 0;
+  padding: 0.68rem 1.3rem;
   transition: all 300ms;
   font-weight: bold;
+  color: white;
 }
 
 .btn:hover,
 .btn:focus {
   filter: brightness(125%);
+  transform: scale(1.1);
+}
+
+.btn--fit-content {
+  width: fit-content;
 }
