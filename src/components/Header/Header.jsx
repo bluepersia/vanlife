@@ -11,6 +11,10 @@ export default function Header() {
         <Nav
           links={[
             {
+              to: "host",
+              name: "Host",
+            },
+            {
               to: "about",
               name: "About",
             },
