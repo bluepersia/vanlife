@@ -7,7 +7,7 @@ export default function AppLayout() {
   return (
     <div className={styles.layout}>
       <Header />
-      <main>
+      <main className={styles.main}>
         <Outlet />
       </main>
       <Footer />
