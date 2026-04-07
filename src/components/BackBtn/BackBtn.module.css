@@ -1,0 +1,16 @@
+.back-btn {
+  color: inherit;
+  text-decoration: none;
+
+  display: inline-block;
+  transition: transform 300ms;
+}
+
+.back-btn span {
+  text-decoration: underline;
+}
+
+.back-btn:hover,
+.back-btn:focus {
+  transform: scale(1.1);
+}

@@ -7,6 +7,7 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Vans from "./pages/Vans/Vans.jsx";
 import "./server.js";
+import VanDetail from "./pages/VanDetail/VanDetail.jsx";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="vans" element={<Vans />} />
+            <Route path="vans/:id" element={<VanDetail />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -86,7 +86,14 @@ export default function Vans() {
         </div>
         <div className={styles.vans}>
           {displayedVans &&
-            displayedVans.map((van) => <Van key={van.id} {...van} />)}
+            displayedVans.map((van) => (
+              <Van
+                key={van.id}
+                {...van}
+                searchParams={searchParams}
+                typeFilter={typeFilter}
+              />
+            ))}
         </div>
       </>
     );
