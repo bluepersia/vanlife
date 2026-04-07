@@ -1,0 +1,11 @@
+.details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  font-size: 0.87rem;
+  padding-top: 1.68rem;
+}
+
+.property span {
+  font-weight: bold;
+}

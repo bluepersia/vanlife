@@ -1,0 +1,12 @@
+.pricing {
+  padding-top: 2.75rem;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.price span {
+  font-size: 1rem;
+}

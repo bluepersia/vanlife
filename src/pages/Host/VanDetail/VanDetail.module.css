@@ -1,0 +1,36 @@
+.van-detail {
+  padding: 3.75rem 0;
+}
+
+.van {
+  margin-top: 2.31rem;
+  background-color: white;
+  padding: 1.43rem;
+}
+
+.van-header {
+  display: flex;
+  align-items: center;
+  column-gap: 1.25rem;
+  margin-bottom: 1.6rem;
+}
+
+.van-img {
+  width: 100%;
+  flex-basis: 45%;
+}
+
+.van-name {
+  font-size: 1.625rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.van-price {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.van-price span {
+  font-weight: 500;
+  font-size: 1rem;
+}

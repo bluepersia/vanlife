@@ -13,6 +13,10 @@ import Dashboard from "./pages/Host/Dashboard/Dashboard.jsx";
 import Income from "./pages/Host/Income/Income.jsx";
 import HostVans from "./pages/Host/Vans/Vans.jsx";
 import Reviews from "./pages/Host/Reviews/Reviews.jsx";
+import HostVanDetail from "./pages/Host/VanDetail/VanDetail.jsx";
+import HostVanDetails from "./pages/Host/VanDetail/Details/HostVanDetails.jsx";
+import HostVanPricing from "./pages/Host/VanDetail/Pricing/HostVanPricing.jsx";
+import HostVanPhotos from "./pages/Host/VanDetail/Photos/HostVanPhotos.jsx";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +34,11 @@ function App() {
               <Route index element={<Dashboard />} />
               <Route path="income" element={<Income />} />
               <Route path="vans" element={<HostVans />} />
+              <Route path="vans/:id" element={<HostVanDetail />}>
+                <Route index element={<HostVanDetails />} />
+                <Route path="pricing" element={<HostVanPricing />} />
+                <Route path="photos" element={<HostVanPhotos />} />
+              </Route>
               <Route path="reviews" element={<Reviews />} />
             </Route>
           </Route>

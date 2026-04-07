@@ -1,0 +1,8 @@
+.photos {
+  padding-top: 1.5rem;
+}
+.photo {
+  width: 30%;
+  display: block;
+  border-radius: 0.31rem;
+}
