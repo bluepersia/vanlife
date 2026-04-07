@@ -1,11 +1,12 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import "./App.css";
 
 function App() {
   return (
-    <div className="container">
-      <h1>Hello World</h1>
-      <p>This is lorem ipsum text</p>
-    </div>
+    <BrowserRouter>
+      <Routes></Routes>
+    </BrowserRouter>
   );
 }
 
