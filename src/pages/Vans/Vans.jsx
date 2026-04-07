@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useQueryClient, useQuery } from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import { useSearchParams } from "react-router-dom";
 import { getVans } from "./services";
 import clsx from "clsx";
@@ -9,7 +9,6 @@ import Van from "./Van/Van";
 
 export default function Vans() {
   const [hasStarted, setHasStarted] = useState(false);
-  const queryClient = useQueryClient();
   const [searchParams, setSearchParams] = useSearchParams();
 
   const { isPending, error, data } = useQuery({
