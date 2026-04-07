@@ -4,7 +4,10 @@ import { useSearchParams } from "react-router-dom";
 import { getVans } from "./services";
 import clsx from "clsx";
 import styles from "./Vans.module.css";
-import { determineLoadingText, determineErrorText } from "./utils";
+import {
+  determineLoadingText,
+  determineErrorText,
+} from "/src/utils/determinePretexts";
 import Van from "./Van/Van";
 
 export default function Vans() {
