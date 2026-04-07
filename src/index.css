@@ -1,0 +1,16 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --f-inter: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--f-inter);
+  background-color: #fff7ed;
+}
