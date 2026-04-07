@@ -13,7 +13,7 @@ export default function HostVans() {
   const [hasStarted, setHasStarted] = useState(false);
 
   const { isPending, error, data } = useQuery({
-    queryKey: ["vans"],
+    queryKey: ["host-vans"],
     queryFn: getHostVans,
   });
 
