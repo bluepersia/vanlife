@@ -34,9 +34,12 @@ export default function Vans() {
 
   const typeFilter = searchParams.get("type") || "";
 
-  let displayedVans = typeFilter
-    ? data.filter((van) => van.type === typeFilter)
-    : data;
+  let displayedVans = null;
+
+  if (data)
+    displayedVans = typeFilter
+      ? data.filter((van) => van.type === typeFilter)
+      : data;
 
   function render() {
     if (error)
