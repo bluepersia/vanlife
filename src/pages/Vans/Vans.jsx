@@ -17,7 +17,8 @@ export default function Vans() {
   });
 
   useEffect(() => {
-    setHasStarted(true);
+    const id = setTimeout(() => setHasStarted(true), 0);
+    return () => clearTimeout(id);
   }, []);
 
   function setSearch(key, value) {
