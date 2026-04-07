@@ -1,0 +1,20 @@
+.van-type {
+  padding: 0.4rem 0.875rem;
+  width: fit-content;
+  border-radius: 0.31rem;
+  color: #ffead0;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.van-type--simple {
+  background-color: #e17654;
+}
+
+.van-type--luxury {
+  background-color: #161616;
+}
+
+.van-type--rugged {
+  background-color: #115e59;
+}

@@ -1,0 +1,54 @@
+.vans-page {
+  padding-top: 3.375rem;
+  padding-bottom: 3.31rem;
+}
+.title {
+  font-size: 2rem;
+  margin-bottom: 1.37rem;
+}
+
+.van-types {
+  display: flex;
+  align-items: center;
+  column-gap: 1.25rem;
+  margin-bottom: 3.5rem;
+}
+
+.van-type {
+  background-color: #ffead0;
+  border: none;
+  padding: 0.43rem 1.6rem;
+  border-radius: 0.31rem;
+  font-weight: 500;
+  color: #4d4d4d;
+  transition: all 300ms;
+  cursor: pointer;
+}
+.van-type:focus,
+.van-type:hover {
+  color: white;
+}
+.van-type--simple:hover,
+.van-type--simple:focus {
+  background-color: #e17654;
+}
+
+.van-type--luxury:hover,
+.van-type--luxury:focus {
+  background-color: #161616;
+}
+.van-type--rugged:hover,
+.van-type--rugged:focus {
+  background-color: #115e59;
+}
+
+.clear {
+  background: none;
+  text-decoration: underline;
+}
+
+.vans {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+}
