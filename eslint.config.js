@@ -35,6 +35,7 @@ export default defineConfig([
       ...jsxA11y.configs.recommended.rules,
 
       "react/react-in-jsx-scope": "off", // React 17+
+      "react/prop-types": "off",
     },
   },
 ]);

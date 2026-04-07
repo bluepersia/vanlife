@@ -1,11 +1,15 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import "./App.css";
+import AppLayout from "./components/AppLayout/AppLayout";
 
 function App() {
   return (
-    <div className="container">
-      <h1>Hello World</h1>
-      <p>This is lorem ipsum text</p>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<AppLayout />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
