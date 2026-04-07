@@ -4,6 +4,7 @@ import "./App.css";
 import AppLayout from "./components/AppLayout/AppLayout";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
+import "./server.js";
 
 function App() {
   return (
