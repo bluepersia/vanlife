@@ -13,6 +13,7 @@ export default function Nav({ links }) {
               to={link.to}
               style={determineNavLinkStyle}
               className={clsx(styles.link, "reset-link")}
+              end={link.end}
             >
               {link.name}
             </NavLink>
