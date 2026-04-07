@@ -4,7 +4,10 @@ import { useSearchParams } from "react-router-dom";
 import { getVans } from "./services";
 import clsx from "clsx";
 import styles from "./Vans.module.css";
-import { determineLoadingText, determineErrorText } from "./utils";
+import {
+  determineLoadingText,
+  determineErrorText,
+} from "/src/utils/determinePretexts";
 import Van from "./Van/Van";
 
 export default function Vans() {
@@ -83,7 +86,14 @@ export default function Vans() {
         </div>
         <div className={styles.vans}>
           {displayedVans &&
-            displayedVans.map((van) => <Van key={van.id} {...van} />)}
+            displayedVans.map((van) => (
+              <Van
+                key={van.id}
+                {...van}
+                searchParams={searchParams}
+                typeFilter={typeFilter}
+              />
+            ))}
         </div>
       </>
     );
