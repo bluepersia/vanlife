@@ -1,11 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./App.css";
+import AppLayout from "./components/AppLayout/AppLayout";
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes></Routes>
+      <Routes>
+        <Route path="/" element={<AppLayout />}></Route>
+      </Routes>
     </BrowserRouter>
   );
 }
