@@ -6,9 +6,11 @@ import { Link } from "react-router";
 
 type VanProps = {
   van: Van;
+  query: string;
+  type: string;
 };
 
-export default function Van({ van }: VanProps): JSX.Element {
+export default function Van({ van, query, type }: VanProps): JSX.Element {
   return (
     <article className={styles.van}>
       <img src={van.imageUrl} alt={`${van.name}`} className={styles.vanImg} />
@@ -24,7 +26,7 @@ export default function Van({ van }: VanProps): JSX.Element {
           <p className={styles.perDay}>/day</p>
         </div>
       </div>
-      <Link to={van.id} className={styles.link}>
+      <Link to={van.id} className={styles.link} state={{ query, type }}>
         View more
       </Link>
     </article>

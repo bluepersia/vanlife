@@ -1,0 +1,40 @@
+.van {
+  margin-top: 2.56rem;
+  padding-bottom: 5.31rem;
+}
+
+.van > * {
+  max-width: 500px;
+}
+
+.vanImg {
+  margin-bottom: 3.1rem;
+}
+
+.vanType {
+  margin-bottom: 1.25rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 0.625rem;
+}
+
+.price {
+  font-size: 1.25rem;
+  margin-bottom: 0.625rem;
+}
+
+.price span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.desc {
+  margin-bottom: 1.31rem;
+}
+
+.button {
+  color: white;
+  width: 100%;
+}
