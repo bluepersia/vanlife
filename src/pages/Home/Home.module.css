@@ -1,0 +1,28 @@
+.home {
+  background-image: url("/src/assets/images/home-hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4rem 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-inner {
+  max-width: 600px;
+}
+
+.title {
+  font-size: 2.25rem;
+  margin-bottom: 1.43rem;
+}
+
+.desc {
+  font-weight: 500;
+  margin-bottom: 3.18rem;
+}
+
+.button {
+  width: 100%;
+}
