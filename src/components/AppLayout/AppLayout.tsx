@@ -8,7 +8,9 @@ export default function AppLayout(): JSX.Element {
   return (
     <div className={styles["app-layout"]}>
       <Header />
-      <Outlet />
+      <main className={styles.main}>
+        <Outlet />
+      </main>
       <Footer />
     </div>
   );
