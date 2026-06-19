@@ -1,0 +1,20 @@
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.26rem 0;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #000;
+  font-size: 1.56rem;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+.logo:hover,
+.logo:focus {
+  font-size: 1.7rem;
+}
