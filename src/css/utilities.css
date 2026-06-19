@@ -20,3 +20,28 @@
   max-width: 1000px;
   margin-inline: auto;
 }
+
+.error {
+  color: red;
+}
+
+.van-type {
+  text-transform: capitalize;
+  padding: 0.31rem 0.875rem;
+  width: fit-content;
+  border-radius: 5px;
+  color: #ffead0;
+  font-weight: 600;
+}
+
+.van-type--simple {
+  background-color: #e17654;
+}
+
+.van-type--luxury {
+  background-color: #161616;
+}
+
+.van-type--rugged {
+  background-color: #115e59;
+}

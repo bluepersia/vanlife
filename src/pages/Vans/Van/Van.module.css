@@ -1,0 +1,38 @@
+.van {
+  position: relative;
+  transition: all 300ms;
+}
+
+.van:hover,
+.van:focus {
+  filter: brightness(120%);
+}
+
+.vanImg {
+  border-radius: 5px;
+  margin-bottom: 0.625rem;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vanName {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.vanPrice {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.link {
+  opacity: 0;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+}
