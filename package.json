@@ -12,6 +12,7 @@
   "dependencies": {
     "@tanstack/react-query": "^5.101.0",
     "clsx": "^2.1.1",
+    "miragejs": "^0.1.48",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-router": "^8.0.1"

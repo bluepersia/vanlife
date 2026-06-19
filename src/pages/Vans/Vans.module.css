@@ -1,0 +1,38 @@
+.header {
+  padding: 3.375rem 0;
+}
+
+.title {
+  margin-bottom: 1.375rem;
+}
+
+.filters {
+  display: flex;
+  column-gap: 1.25rem;
+}
+
+.filter {
+  background-color: #ffead0;
+  color: #4d4d4d;
+  padding: 0.43rem 1.625rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter:hover,
+.filter:focus {
+  background-color: #1d1d1d;
+  color: white;
+}
+
+.clear {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.vans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(229px, 1fr));
+  gap: 1rem;
+  padding-bottom: 5.18rem;
+}
