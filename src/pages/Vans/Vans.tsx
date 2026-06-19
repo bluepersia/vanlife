@@ -79,7 +79,12 @@ export default function Vans(): JSX.Element {
 
       <div className={styles.vans}>
         {displayedVans?.map((van) => (
-          <Van key={van.id} van={van} />
+          <Van
+            key={van.id}
+            van={van}
+            query={searchParams.toString()}
+            type={type}
+          />
         ))}
       </div>
     </div>

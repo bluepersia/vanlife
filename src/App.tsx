@@ -8,6 +8,7 @@ import AppLayout from "./components/AppLayout/AppLayout";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Vans from "./pages/Vans/Vans.js";
+import VanDetail from "./pages/VanDetail/VanDetail.js";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ function App(): JSX.Element {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="vans" element={<Vans />} />
+            <Route path="vans/:id" element={<VanDetail />} />
           </Route>
         </Routes>
       </BrowserRouter>

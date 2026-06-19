@@ -34,7 +34,11 @@ export default function Button({
   if (onClick)
     return (
       <button
-        className={clsx(styles.button, styles[`button--color-${color}`])}
+        className={clsx(
+          styles.button,
+          styles[`button--color-${color}`],
+          className,
+        )}
         onClick={onClick}
       >
         {children}
