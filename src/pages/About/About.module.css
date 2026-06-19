@@ -1,0 +1,32 @@
+.img {
+  object-fit: cover;
+  margin-inline: auto;
+}
+
+.about-inner {
+  padding: 3rem 0;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.para-1 {
+  margin-bottom: 1rem;
+}
+
+.para-2 {
+  margin-bottom: 3.43rem;
+}
+
+.cta {
+  background-color: #ffcc8d;
+  padding: 2rem 2.31rem;
+  border-radius: 5px;
+}
+
+.cta-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.56rem;
+}

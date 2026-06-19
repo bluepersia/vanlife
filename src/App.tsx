@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import AppLayout from "./components/AppLayout/AppLayout";
 import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
 
 const queryClient = new QueryClient();
 
@@ -15,6 +16,7 @@ function App(): JSX.Element {
         <Routes>
           <Route path="/" element={<AppLayout />}>
             <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
           </Route>
         </Routes>
       </BrowserRouter>
