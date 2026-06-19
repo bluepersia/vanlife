@@ -1,18 +1,19 @@
 import type { JSX } from "react/jsx-runtime";
 import "./App.css";
 import "./css/utilities.css";
-import { BrowserRouter, Routes } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import AppLayout from "./components/AppLayout/AppLayout";
 
 const queryClient = new QueryClient();
 
 function App(): JSX.Element {
-  const message = "Hello World";
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
-        <h1>{message}</h1>
-        <Routes></Routes>
+        <Routes>
+          <Route path="/" element={<AppLayout />}></Route>
+        </Routes>
       </BrowserRouter>
     </QueryClientProvider>
   );
