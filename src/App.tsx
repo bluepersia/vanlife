@@ -18,6 +18,7 @@ import HostVanDetail from "./pages/Host/Vans/VanDetail/HostVanDetail.js";
 import HostVanDetails from "./pages/Host/Vans/VanDetail/Details/HostVanDetails.js";
 import HostVanPricing from "./pages/Host/Vans/VanDetail/Pricing/HostVanPricing.js";
 import HostVanPhotos from "./pages/Host/Vans/VanDetail/Photos/HostVanPhotos.js";
+import NotFound from "./pages/NotFound/NotFound.js";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +43,7 @@ function App(): JSX.Element {
               </Route>
               <Route path="reviews" element={<HostReviews />} />
             </Route>
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </BrowserRouter>
