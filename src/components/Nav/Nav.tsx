@@ -9,11 +9,12 @@ type NavProps = {
     to: string;
     end?: boolean;
   }>;
+  className?: string;
 };
 
 export default function Nav(props: NavProps): JSX.Element {
   return (
-    <nav className={styles.nav}>
+    <nav className={clsx(styles.nav, props.className)}>
       <ul className={clsx(styles.list, "reset-list")}>
         {props.links.map((link) => (
           <li key={link.to} className={styles.item}>
