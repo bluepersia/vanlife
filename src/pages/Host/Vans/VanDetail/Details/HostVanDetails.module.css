@@ -1,0 +1,9 @@
+.detailEntry {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.term {
+  font-weight: bold;
+  margin-right: 0.2rem;
+}
