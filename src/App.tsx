@@ -9,6 +9,11 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Vans from "./pages/Vans/Vans.js";
 import VanDetail from "./pages/VanDetail/VanDetail.js";
+import HostLayout from "./pages/Host/HostLayout.js";
+import HostDashboard from "./pages/Host/Dashboard/HostDashboard.js";
+import HostIncome from "./pages/Host/Income/HostIncome.js";
+import HostVans from "./pages/Host/Vans/HostVans.js";
+import HostReviews from "./pages/Host/Reviews/HostReviews.js";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +27,12 @@ function App(): JSX.Element {
             <Route path="about" element={<About />} />
             <Route path="vans" element={<Vans />} />
             <Route path="vans/:id" element={<VanDetail />} />
+            <Route path="host" element={<HostLayout />}>
+              <Route index element={<HostDashboard />} />
+              <Route path="income" element={<HostIncome />} />
+              <Route path="vans" element={<HostVans />} />
+              <Route path="reviews" element={<HostReviews />} />
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>

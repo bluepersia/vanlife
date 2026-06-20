@@ -7,6 +7,7 @@ type NavProps = {
   links: Array<{
     label: string;
     to: string;
+    end?: boolean;
   }>;
 };
 
@@ -21,6 +22,7 @@ export default function Nav(props: NavProps): JSX.Element {
               className={({ isActive }) =>
                 clsx(styles.link, isActive && styles["link--active"])
               }
+              end={link.end}
             >
               {link.label}
             </NavLink>

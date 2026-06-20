@@ -14,6 +14,10 @@ export default function Header(): JSX.Element {
         <Nav
           links={[
             {
+              label: "Host",
+              to: "host",
+            },
+            {
               label: "About",
               to: "about ",
             },
